@@ -1,0 +1,344 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prevención, Información y Denuncia</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#58cc02,#3aa400);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+/* NAV */
+nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#58cc02;
+    font-weight:700;
+    padding:8px 12px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#e9ffe5;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    gap:20px;
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.content{
+    flex:2;
+}
+
+.sidebar{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#58cc02;
+    margin-bottom:10px;
+}
+
+.card img{
+    width:100%;
+    border-radius:12px;
+    margin:10px 0;
+}
+
+/* LINKS */
+a.info{
+    display:inline-block;
+    margin-top:10px;
+    color:#2a7cff;
+    text-decoration:none;
+}
+
+a.info:hover{
+    text-decoration:underline;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+button{
+    background:#58cc02;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#3aa400;
+}
+
+.success{
+    color:green;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+    margin-top:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .layout{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-wrap:wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prevención, Información y Denuncia</h1>
+    <p>Información confiable para la protección y orientación</p>
+</header>
+
+<nav>
+    <a href="#abuso">Abuso Sexual</a>
+    <a href="#acoso">Acoso Sexual</a>
+    <a href="#difamacion">Difamación</a>
+</nav>
+
+<div class="layout">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="content">
+
+        <div class="card" id="abuso">
+            <h2>Abuso Sexual</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+                alt="Prevención del abuso sexual">
+
+            <p>
+                El abuso sexual es cualquier acto, contacto o explotación de
+                carácter sexual que ocurre sin el consentimiento de una persona.
+                Puede involucrar fuerza, amenazas, manipulación o el
+                aprovechamiento de una situación de vulnerabilidad.
+            </p>
+
+            <a class="info"
+               href="https://www.unicef.org/mexico"
+               target="_blank">
+               Más información en UNICEF
+            </a>
+        </div>
+
+        <div class="card" id="acoso">
+            <h2>Acoso Sexual</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                alt="Información sobre acoso sexual">
+
+            <p>
+                El acoso sexual consiste en conductas no deseadas de naturaleza
+                sexual que generan intimidación, humillación o un ambiente hostil.
+                Puede presentarse mediante comentarios, mensajes, insinuaciones,
+                persecución o contacto físico no deseado.
+            </p>
+
+            <a class="info"
+               href="https://www.gob.mx/sipinna"
+               target="_blank">
+               Protección de menores en México
+            </a>
+        </div>
+
+        <div class="card" id="difamacion">
+            <h2>Difamación</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+                alt="Difamación e información falsa">
+
+            <p>
+                Difundir información falsa sobre una persona puede afectar su
+                reputación y generar consecuencias legales dependiendo de la
+                legislación aplicable.
+            </p>
+
+            <a class="info"
+               href="https://www.gob.mx"
+               target="_blank">
+               Portal del Gobierno de México
+            </a>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="card">
+            <h2>Leyes y Denuncia</h2>
+
+            <p>
+                En una emergencia llama al 911. También puedes acudir a las
+                autoridades competentes para orientación y denuncia.
+            </p>
+
+            <ul style="margin-top:10px;padding-left:20px;">
+                <li>Orientación jurídica</li>
+                <li>Denuncia presencial</li>
+                <li>Atención a víctimas</li>
+                <li>Canales oficiales de apoyo</li>
+            </ul>
+
+            <a class="info"
+               href="https://www.fgr.org.mx/"
+               target="_blank">
+               Sitio de la Fiscalía
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Formulario de Ayuda</h2>
+
+            <form id="formulario">
+
+                <input
+                    type="text"
+                    placeholder="Nombre completo"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Correo electrónico"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Teléfono"
+                    required>
+
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Abuso Sexual</option>
+                    <option>Acoso Sexual</option>
+                    <option>Difamación</option>
+                </select>
+
+                <textarea
+                    placeholder="Describe brevemente la situación"></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+                <p id="msg" class="success"></p>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Proyecto informativo de prevención y orientación.</p>
+</footer>
+
+<script>
+document.getElementById("formulario").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    document.getElementById("msg").textContent =
+        "Formulario enviado correctamente.";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
+```
